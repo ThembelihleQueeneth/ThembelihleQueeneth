@@ -9,11 +9,34 @@
 - **My Stack**
 
                       
-<img width="225" height="225" alt="html" src="https://github.com/user-attachments/assets/9cb2ec5e-767f-40bc-b120-5aafd3a3d9ba" />
-<img width="189" height="267" alt="css3" src="https://github.com/user-attachments/assets/1c9b136a-3937-4d21-9e8b-721de98ce5a0" />
-<img width="2360" height="2660" alt="javascript" src="https://github.com/user-attachments/assets/a43d4ba8-7630-4e69-8e7a-7013b9757054" />
-<img width="1200" height="957" alt="Bootstrap_logo svg" src="https://github.com/user-attachments/assets/4d014be3-b266-4bf2-93a6-beab381bfe0c" />
-![git](https://github.com/user-attachments/assets/46678858-31a5-48d0-96b6-8833dbb1ec33)
-<img width="4000" height="2500" alt="java" src="https://github.com/user-attachments/assets/e6ebe657-2bf2-466e-a0c1-c3e5bf3d12d0" />
-![nodejs](https://github.com/user-attachments/assets/29af5cd7-5b52-453d-a0d7-2e48cecaa11b)
-<img width="281" height="179" alt="vercel" src="https://github.com/user-attachments/assets/be79314e-d8cb-463b-aadb-455510164763" />
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/9cb2ec5e-767f-40bc-b120-5aafd3a3d9ba" width="100" height="100" alt="HTML" />
+      <br><sub><b>HTML</b></sub>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/1c9b136a-3937-4d21-9e8b-721de98ce5a0" width="100" height="100" alt="CSS" />
+      <br><sub><b>CSS</b></sub>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/a43d4ba8-7630-4e69-8e7a-7013b9757054" width="100" height="100" alt="JavaScript" />
+      <br><sub><b>JavaScript</b></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/4d014be3-b266-4bf2-93a6-beab381bfe0c" width="100" height="100" alt="Bootstrap" />
+      <br><sub><b>Bootstrap</b></sub>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/e6ebe657-2bf2-466e-a0c1-c3e5bf3d12d0" width="100" height="100" alt="Java" />
+      <br><sub><b>Java</b></sub>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/be79314e-d8cb-463b-aadb-455510164763" width="100" height="100" alt="Vercel" />
+      <br><sub><b>Vercel</b></sub>
+    </td>
+  </tr>
+</table>
+
