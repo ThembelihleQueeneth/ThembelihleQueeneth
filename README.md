@@ -1,14 +1,17 @@
-- 👋 Hi, I’m **Thembelihle Queeneth Maluka**  
-- 👀 I’m passionate about **web development**  
+# 👋 Hi, I’m Thembelihle Queeneth Maluka
+
+- 👀 I’m passionate about **Web Development**  
 - 🎓 I hold a **Diploma in Computer Science** from **Tshwane University of Technology**  
 - 💼 I’m seeking opportunities to work at an innovative **tech company**  
-- 📚 Beyond coding, I’m a proud **bookworm** who also enjoys watching **movies and series**  
+- 📚 Beyond coding, I’m a proud **bookworm** who enjoys watching **movies and series**  
 - 🎬 My interest in tech started after watching *The Social Network*, the story of how Facebook was created — and I’ve been hooked ever since  
 - 📫 Reach me at **malukathembelihle95@gmail.com** | **079 331 6193**  
-- 😄 Pronouns: **She/Her/Miss**
-- **My Stack**
+- 😄 Pronouns: **She/Her/Miss**  
 
-                      
+---
+
+## 💻 My Stack
+
 <table>
   <tr>
     <td align="center">
@@ -38,5 +41,24 @@
       <br><sub><b>Vercel</b></sub>
     </td>
   </tr>
+  <tr>
+    <td align="center">
+      <img src="https://cdn.worldvectorlogo.com/logos/typescript.svg" width="100" height="100" alt="TypeScript" />
+      <br><sub><b>TypeScript</b></sub>
+    </td>
+    <td align="center">
+      <img src="https://cdn.worldvectorlogo.com/logos/react-2.svg" width="100" height="100" alt="React" />
+      <br><sub><b>React</b></sub>
+    </td>
+    <td align="center">
+      <img src="https://cdn.worldvectorlogo.com/logos/c--4.svg" width="100" height="100" alt="C#" />
+      <br><sub><b>C#</b></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://cdn.worldvectorlogo.com/logos/figma-1.svg" width="100" height="100" alt="Figma" />
+      <br><sub><b>Figma</b></sub>
+    </td>
+  </tr>
 </table>
-
