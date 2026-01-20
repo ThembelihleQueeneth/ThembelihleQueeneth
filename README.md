@@ -57,6 +57,10 @@
   </tr>
   <tr>
     <td align="center">
+      <img src="https://cdn.worldvectorlogo.com/logos/postgresql.svg" width="100" height="100" alt="PostgreSQL" />
+      <br><sub><b>PostgreSQL</b></sub>
+    </td>
+    <td align="center">
       <img src="https://cdn.worldvectorlogo.com/logos/figma-1.svg" width="100" height="100" alt="Figma" />
       <br><sub><b>Figma</b></sub>
     </td>
