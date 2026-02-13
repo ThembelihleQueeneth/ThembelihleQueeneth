@@ -195,7 +195,6 @@ const myValue = {
 - Survived the tough 2022 period and came back stronger
 - The passion that ignited in 2024 keeps growing every day
 - Balance coding with design - love creating both functional and beautiful interfaces
-- Learned that R20k starting salary mention in 2019? Worth every struggle to get here
 
 ---
 
