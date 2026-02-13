@@ -1,621 +1,184 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thembelihle Queeneth Maluka | Full Stack Developer</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Playfair+Display:wght@700;900&family=JetBrains+Mono:wght@400;600&display=swap');
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        :root {
-            --primary: #F75C7E;
-            --secondary: #7B68EE;
-            --accent: #FFD700;
-            --dark: #0D1117;
-            --darker: #010409;
-            --light: #FFFFFF;
-            --gray: #8B949E;
-        }
-        
-        body {
-            font-family: 'Space Mono', monospace;
-            background: var(--dark);
-            color: var(--light);
-            overflow-x: hidden;
-            position: relative;
-        }
-        
-        /* Animated background */
-        body::before {
-            content: '';
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: 
-                radial-gradient(circle at 20% 50%, rgba(247, 92, 126, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 80% 80%, rgba(123, 104, 238, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 40% 20%, rgba(255, 215, 0, 0.05) 0%, transparent 50%);
-            animation: backgroundPulse 15s ease-in-out infinite;
-            z-index: -1;
-        }
-        
-        @keyframes backgroundPulse {
-            0%, 100% { opacity: 0.3; }
-            50% { opacity: 0.6; }
-        }
-        
-        /* Floating particles */
-        .particle {
-            position: fixed;
-            width: 4px;
-            height: 4px;
-            background: var(--primary);
-            border-radius: 50%;
-            opacity: 0.3;
-            animation: float 20s infinite;
-            z-index: -1;
-        }
-        
-        @keyframes float {
-            0% {
-                transform: translateY(100vh) translateX(0) rotate(0deg);
-                opacity: 0;
-            }
-            10% {
-                opacity: 0.3;
-            }
-            90% {
-                opacity: 0.3;
-            }
-            100% {
-                transform: translateY(-100px) translateX(100px) rotate(360deg);
-                opacity: 0;
-            }
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        
-        /* Hero Section */
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            position: relative;
-        }
-        
-        .hero h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 5rem;
-            font-weight: 900;
-            background: linear-gradient(135deg, var(--primary), var(--secondary), var(--accent));
-            background-size: 200% 200%;
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: gradientShift 5s ease infinite, slideDown 1s ease-out;
-            margin-bottom: 20px;
-            text-shadow: 0 0 40px rgba(247, 92, 126, 0.3);
-        }
-        
-        @keyframes gradientShift {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-        
-        @keyframes slideDown {
-            from {
-                opacity: 0;
-                transform: translateY(-50px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        .hero .tagline {
-            font-size: 1.5rem;
-            color: var(--gray);
-            animation: fadeIn 1.5s ease-out 0.5s both;
-            margin-bottom: 30px;
-        }
-        
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        .typing-text {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 1.2rem;
-            color: var(--primary);
-            border-right: 3px solid var(--primary);
-            white-space: nowrap;
-            overflow: hidden;
-            animation: typing 4s steps(50) 1s both, blink 0.75s step-end infinite;
-        }
-        
-        @keyframes typing {
-            from { width: 0; }
-            to { width: 100%; }
-        }
-        
-        @keyframes blink {
-            50% { border-color: transparent; }
-        }
-        
-        /* Code Block Section */
-        .code-section {
-            background: var(--darker);
-            border: 2px solid var(--primary);
-            border-radius: 15px;
-            padding: 40px;
-            margin: 60px 0;
-            position: relative;
-            overflow: hidden;
-            animation: slideIn 1s ease-out;
-            box-shadow: 0 0 50px rgba(247, 92, 126, 0.2);
-        }
-        
-        @keyframes slideIn {
-            from {
-                opacity: 0;
-                transform: translateX(-100px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-        
-        .code-section::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: linear-gradient(45deg, transparent, rgba(247, 92, 126, 0.1), transparent);
-            animation: scan 3s linear infinite;
-        }
-        
-        @keyframes scan {
-            0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
-            100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
-        }
-        
-        .code-section pre {
-            position: relative;
-            z-index: 1;
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--light);
-        }
-        
-        .code-keyword { color: #FF79C6; }
-        .code-string { color: #50FA7B; }
-        .code-number { color: #BD93F9; }
-        .code-comment { color: var(--gray); font-style: italic; }
-        
-        /* Tech Stack */
-        .tech-stack {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 20px;
-            margin: 60px 0;
-        }
-        
-        .tech-item {
-            background: linear-gradient(135deg, var(--darker) 0%, rgba(247, 92, 126, 0.1) 100%);
-            border: 2px solid transparent;
-            border-radius: 12px;
-            padding: 25px;
-            text-align: center;
-            transition: all 0.3s ease;
-            animation: popIn 0.5s ease-out backwards;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .tech-item::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(247, 92, 126, 0.3), transparent);
-            transition: left 0.5s ease;
-        }
-        
-        .tech-item:hover::before {
-            left: 100%;
-        }
-        
-        .tech-item:nth-child(1) { animation-delay: 0.1s; }
-        .tech-item:nth-child(2) { animation-delay: 0.2s; }
-        .tech-item:nth-child(3) { animation-delay: 0.3s; }
-        .tech-item:nth-child(4) { animation-delay: 0.4s; }
-        .tech-item:nth-child(5) { animation-delay: 0.5s; }
-        .tech-item:nth-child(6) { animation-delay: 0.6s; }
-        
-        @keyframes popIn {
-            from {
-                opacity: 0;
-                transform: scale(0.5) rotate(-10deg);
-            }
-            to {
-                opacity: 1;
-                transform: scale(1) rotate(0deg);
-            }
-        }
-        
-        .tech-item:hover {
-            transform: translateY(-10px) scale(1.05);
-            border-color: var(--primary);
-            box-shadow: 0 10px 40px rgba(247, 92, 126, 0.4);
-        }
-        
-        .tech-item h3 {
-            font-size: 1.1rem;
-            margin-bottom: 10px;
-            color: var(--primary);
-        }
-        
-        .tech-item p {
-            font-size: 0.85rem;
-            color: var(--gray);
-        }
-        
-        /* Timeline */
-        .timeline {
-            position: relative;
-            padding: 40px 0;
-            margin: 60px 0;
-        }
-        
-        .timeline::before {
-            content: '';
-            position: absolute;
-            left: 50%;
-            top: 0;
-            bottom: 0;
-            width: 3px;
-            background: linear-gradient(180deg, var(--primary), var(--secondary), var(--accent));
-            animation: growLine 2s ease-out;
-        }
-        
-        @keyframes growLine {
-            from { height: 0; }
-            to { height: 100%; }
-        }
-        
-        .timeline-item {
-            position: relative;
-            margin: 40px 0;
-            animation: fadeInUp 0.8s ease-out backwards;
-        }
-        
-        .timeline-item:nth-child(odd) {
-            text-align: right;
-            padding-right: calc(50% + 40px);
-        }
-        
-        .timeline-item:nth-child(even) {
-            text-align: left;
-            padding-left: calc(50% + 40px);
-        }
-        
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(50px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        .timeline-dot {
-            position: absolute;
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 20px;
-            height: 20px;
-            background: var(--primary);
-            border: 4px solid var(--dark);
-            border-radius: 50%;
-            animation: pulse 2s ease-in-out infinite;
-        }
-        
-        @keyframes pulse {
-            0%, 100% {
-                box-shadow: 0 0 0 0 rgba(247, 92, 126, 0.7);
-            }
-            50% {
-                box-shadow: 0 0 0 20px rgba(247, 92, 126, 0);
-            }
-        }
-        
-        /* Contact Section */
-        .contact-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            margin: 60px 0;
-        }
-        
-        .contact-card {
-            background: linear-gradient(135deg, var(--darker) 0%, rgba(123, 104, 238, 0.1) 100%);
-            border: 2px solid var(--secondary);
-            border-radius: 15px;
-            padding: 30px;
-            text-align: center;
-            transition: all 0.4s ease;
-            animation: bounceIn 0.8s ease-out backwards;
-        }
-        
-        @keyframes bounceIn {
-            0% {
-                opacity: 0;
-                transform: scale(0.3);
-            }
-            50% {
-                transform: scale(1.05);
-            }
-            100% {
-                opacity: 1;
-                transform: scale(1);
-            }
-        }
-        
-        .contact-card:hover {
-            transform: translateY(-15px) rotate(2deg);
-            box-shadow: 0 15px 50px rgba(123, 104, 238, 0.5);
-            border-color: var(--accent);
-        }
-        
-        .contact-icon {
-            font-size: 3rem;
-            margin-bottom: 15px;
-            display: inline-block;
-            animation: spin 10s linear infinite;
-        }
-        
-        @keyframes spin {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-        }
-        
-        .contact-card:hover .contact-icon {
-            animation: wobble 0.5s ease;
-        }
-        
-        @keyframes wobble {
-            0%, 100% { transform: rotate(0deg); }
-            25% { transform: rotate(-10deg); }
-            75% { transform: rotate(10deg); }
-        }
-        
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 60px 20px;
-            background: var(--darker);
-            border-top: 2px solid var(--primary);
-            margin-top: 100px;
-        }
-        
-        .footer-quote {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.8rem;
-            font-style: italic;
-            color: var(--accent);
-            margin-bottom: 20px;
-            animation: glow 3s ease-in-out infinite;
-        }
-        
-        @keyframes glow {
-            0%, 100% {
-                text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
-            }
-            50% {
-                text-shadow: 0 0 30px rgba(255, 215, 0, 0.8);
-            }
-        }
-        
-        /* Section Headers */
-        .section-header {
-            font-family: 'Playfair Display', serif;
-            font-size: 3rem;
-            text-align: center;
-            margin: 80px 0 40px;
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: slideIn 1s ease-out;
-        }
-        
-        /* Responsive */
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 3rem;
-            }
-            
-            .timeline-item:nth-child(odd),
-            .timeline-item:nth-child(even) {
-                text-align: left;
-                padding-left: 40px;
-                padding-right: 0;
-            }
-            
-            .timeline::before {
-                left: 10px;
-            }
-            
-            .timeline-dot {
-                left: 10px;
-            }
-        }
-    </style>
-</head>
-<body>
-    <!-- Floating particles -->
-    <div class="particle" style="left: 10%; animation-delay: 0s;"></div>
-    <div class="particle" style="left: 20%; animation-delay: 2s;"></div>
-    <div class="particle" style="left: 30%; animation-delay: 4s;"></div>
-    <div class="particle" style="left: 40%; animation-delay: 1s;"></div>
-    <div class="particle" style="left: 50%; animation-delay: 3s;"></div>
-    <div class="particle" style="left: 60%; animation-delay: 5s;"></div>
-    <div class="particle" style="left: 70%; animation-delay: 2.5s;"></div>
-    <div class="particle" style="left: 80%; animation-delay: 4.5s;"></div>
-    <div class="particle" style="left: 90%; animation-delay: 1.5s;"></div>
+<div align="center">
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1>Thembelihle Queeneth Maluka</h1>
-            <p class="tagline">Full Stack Developer | Tech Enthusiast | Digital Dreamer</p>
-            <div class="typing-text">Building Digital Dreams, One Line at a Time ✨</div>
-        </div>
-    </section>
+![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,2,3&height=200&section=header&text=Thembelihle%20Queeneth%20Maluka&fontSize=50&fontColor=fff&animation=fadeIn&fontAlignY=38&desc=Full%20Stack%20Developer%20%7C%20Building%20Digital%20Dreams&descSize=20&descAlignY=55)
 
-    <!-- About Me Code Block -->
-    <div class="container">
-        <h2 class="section-header">👋 About Me</h2>
-        <div class="code-section">
-            <pre>
-<span class="code-keyword">const</span> thembelihle = {
-  <span class="code-string">pronouns</span>: <span class="code-string">"She/Her/Miss"</span>,
-  <span class="code-string">location</span>: <span class="code-string">"South Africa 🇿🇦"</span>,
-  <span class="code-string">education</span>: <span class="code-string">"Diploma in Computer Science @ TUT"</span>,
-  <span class="code-string">experience</span>: <span class="code-number">16</span> <span class="code-comment">// months of excellence</span>,
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=FFC107&center=true&vCenter=true&width=600&lines=16+Months+Professional+Experience;Passionate+About+Web+Development;Always+Learning%2C+Always+Growing)](https://git.io/typing-svg)
+
+</div>
+
+---
+
+## About Me
+
+```typescript
+const developer = {
+  name: "Thembelihle Queeneth Maluka",
+  pronouns: "She/Her",
+  location: "South Africa",
+  education: "Diploma in Computer Science",
+  university: "Tshwane University of Technology",
+  experience: "16 months",
+  portfolio: "https://thembelihle-dev.vercel.app/",
   
-  <span class="code-string">inspiration</span>: {
-    <span class="code-string">movie</span>: <span class="code-string">"The Social Network"</span>,
-    <span class="code-string">moment</span>: <span class="code-string">"Watching Zuckerberg code Facebook"</span>,
-    <span class="code-string">result</span>: <span class="code-string">"Fell in love with tech 💙"</span>
-  },
+  currentFocus: "Seeking opportunities at innovative tech companies",
+  inspiration: "The Social Network - ignited my passion for tech",
   
-  <span class="code-string">passion</span>: [<span class="code-string">"Web Development"</span>, <span class="code-string">"Full Stack"</span>, <span class="code-string">"Innovation"</span>],
-  <span class="code-string">hobbies</span>: [<span class="code-string">"📚 Reading"</span>, <span class="code-string">"🎬 Movies"</span>, <span class="code-string">"📺 Series"</span>],
-  
-  <span class="code-string">currentGoal</span>: <span class="code-string">"Join an innovative tech company"</span>,
-  <span class="code-string">philosophy</span>: <span class="code-string">"Dream big. Code bigger. 🚀"</span>
+  interests: {
+    technical: ["Web Development", "Full Stack", "UI/UX Design"],
+    personal: ["Reading", "Movies", "TV Series"]
+  }
 };
-            </pre>
-        </div>
+```
 
-        <!-- Tech Stack -->
-        <h2 class="section-header">💻 Tech Arsenal</h2>
-        <div class="tech-stack">
-            <div class="tech-item">
-                <h3>Frontend</h3>
-                <p>HTML • CSS • JavaScript • TypeScript • React • React Native</p>
-            </div>
-            <div class="tech-item">
-                <h3>Styling</h3>
-                <p>TailwindCSS • Bootstrap • Figma</p>
-            </div>
-            <div class="tech-item">
-                <h3>Backend</h3>
-                <p>Node.js • Express • RESTful APIs</p>
-            </div>
-            <div class="tech-item">
-                <h3>Databases</h3>
-                <p>PostgreSQL • MySQL</p>
-            </div>
-            <div class="tech-item">
-                <h3>Languages</h3>
-                <p>Java • C#</p>
-            </div>
-            <div class="tech-item">
-                <h3>Tools</h3>
-                <p>Vercel • Swagger • Postman • Thunder</p>
-            </div>
-        </div>
+## Connect With Me
 
-        <!-- Journey Timeline -->
-        <h2 class="section-header">🌈 My Journey</h2>
-        <div class="timeline">
-            <div class="timeline-item" style="animation-delay: 0.2s;">
-                <div class="timeline-dot"></div>
-                <h3>2020 🎬</h3>
-                <p>Watched The Social Network - The spark that started it all</p>
-            </div>
-            <div class="timeline-item" style="animation-delay: 0.4s;">
-                <div class="timeline-dot"></div>
-                <h3>2021 💻</h3>
-                <p>Started my coding journey - First line of code</p>
-            </div>
-            <div class="timeline-item" style="animation-delay: 0.6s;">
-                <div class="timeline-dot"></div>
-                <h3>2022 🎓</h3>
-                <p>Enrolled at Tshwane University of Technology</p>
-            </div>
-            <div class="timeline-item" style="animation-delay: 0.8s;">
-                <div class="timeline-dot"></div>
-                <h3>2023 ✨</h3>
-                <p>Graduated with Diploma in Computer Science</p>
-            </div>
-            <div class="timeline-item" style="animation-delay: 1s;">
-                <div class="timeline-dot"></div>
-                <h3>2024 🚀</h3>
-                <p>16 months of professional experience crafting digital solutions</p>
-            </div>
-            <div class="timeline-item" style="animation-delay: 1.2s;">
-                <div class="timeline-dot"></div>
-                <h3>2025 🌟</h3>
-                <p>Ready to build the future with innovation & passion</p>
-            </div>
-        </div>
+<div align="center">
 
-        <!-- Contact -->
-        <h2 class="section-header">📬 Let's Connect!</h2>
-        <div class="contact-grid">
-            <div class="contact-card" style="animation-delay: 0.2s;">
-                <div class="contact-icon">📧</div>
-                <h3>Email</h3>
-                <p>malukathembelihle95@gmail.com</p>
-            </div>
-            <div class="contact-card" style="animation-delay: 0.4s;">
-                <div class="contact-icon">📱</div>
-                <h3>Phone</h3>
-                <p>079 331 6193</p>
-            </div>
-        </div>
-    </div>
+[![Portfolio](https://img.shields.io/badge/Portfolio-FF6B35?style=for-the-badge&logo=vercel&logoColor=white)](https://thembelihle-dev.vercel.app/)
+[![Email](https://img.shields.io/badge/Email-DC3545?style=for-the-badge&logo=gmail&logoColor=white)](mailto:malukathembelihle95@gmail.com)
+[![Phone](https://img.shields.io/badge/Phone-FFC107?style=for-the-badge&logo=phone&logoColor=black)](tel:0793316193)
 
-    <!-- Footer -->
-    <footer>
-        <p class="footer-quote">"The best way to predict the future is to create it."</p>
-        <p style="color: var(--gray); margin-top: 20px;">Made with 💙 by Thembelihle Queeneth Maluka</p>
-    </footer>
-</body>
-</html>
+</div>
+
+---
+
+## Technical Skills
+
+### Frontend Development
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+
+### Styling Frameworks
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
+
+### Backend Development
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+
+### Databases
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+
+### Programming Languages
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
+
+### Tools & Platforms
+![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
+![Swagger](https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=black)
+![Thunder Client](https://img.shields.io/badge/Thunder_Client-2C2A4A?style=for-the-badge&logo=thunderclient&logoColor=white)
+
+### APIs
+![REST API](https://img.shields.io/badge/REST_API-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+
+---
+
+## GitHub Statistics
+
+<div align="center">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=FFC107&icon_color=DC3545&text_color=FFFFFF&include_all_commits=true&count_private=true"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=FFC107&text_color=FFFFFF&langs_count=8"/>
+</div>
+
+<div align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=YOUR_GITHUB_USERNAME&theme=radical&hide_border=true&background=0D1117&stroke=DC3545&ring=FFC107&fire=DC3545&currStreakLabel=FFC107&sideNums=FFFFFF&sideLabels=FFFFFF&dates=8B949E" alt="GitHub Streak"/>
+</div>
+
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=YOUR_GITHUB_USERNAME&theme=react-dark&hide_border=true&bg_color=0D1117&color=FFC107&line=DC3545&point=FFFFFF&area=true&area_color=DC3545" width="95%" alt="Contribution Graph"/>
+</div>
+
+---
+
+## GitHub Trophies
+
+<div align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=YOUR_GITHUB_USERNAME&theme=radical&no-frame=true&no-bg=true&column=7&margin-w=15&margin-h=15&title=MultiLanguage,Commits,PullRequest,Repositories,Stars,Issues,Followers" alt="GitHub Trophies"/>
+</div>
+
+---
+
+## My Journey
+
+<div align="center">
+
+| Year | Milestone |
+|------|-----------|
+| **2020** | Watched *The Social Network* - The spark that started everything |
+| **2021** | Started learning to code - Wrote my first line of code |
+| **2022** | Enrolled at Tshwane University of Technology |
+| **2023** | Graduated with Diploma in Computer Science |
+| **2024** | Gained 16 months of professional development experience |
+| **2025** | Actively seeking opportunities at innovative tech companies |
+
+</div>
+
+---
+
+## Current Goals
+
+```javascript
+const goals2025 = {
+  career: [
+    "Join an innovative tech company",
+    "Build impactful projects that solve real problems",
+    "Contribute to open-source communities",
+    "Mentor aspiring developers"
+  ],
+  
+  learning: [
+    "Advanced React patterns and architecture",
+    "Next.js and server-side rendering",
+    "GraphQL and modern API design",
+    "Docker and containerization",
+    "Cloud platforms (AWS/Azure/GCP)"
+  ],
+  
+  projects: [
+    "Social platform connecting book enthusiasts",
+    "AI-powered movie recommendation engine",
+    "Full-stack e-commerce solution",
+    "Developer portfolio template system"
+  ]
+};
+```
+
+---
+
+## Quote of the Day
+
+<div align="center">
+
+![Quote](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical&quote=The%20best%20way%20to%20predict%20the%20future%20is%20to%20create%20it&author=Peter%20Drucker)
+
+</div>
+
+---
+
+## Profile Views
+
+<div align="center">
+
+![Profile Views](https://komarev.com/ghpvc/?username=YOUR_GITHUB_USERNAME&color=DC3545&style=for-the-badge&label=PROFILE+VIEWS)
+[![GitHub Followers](https://img.shields.io/github/followers/YOUR_GITHUB_USERNAME?style=for-the-badge&color=FFC107&labelColor=0D1117&logo=github)](https://github.com/YOUR_GITHUB_USERNAME?tab=followers)
+
+</div>
+
+---
+
+<div align="center">
+
+### "Dream big. Code bigger."
+
+![Footer](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,2,3&height=120&section=footer)
+
+**Made with passion by Thembelihle Queeneth Maluka**
+
+</div>
