@@ -1,224 +1,600 @@
-<div align="center">
 
-![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,2,3&height=200&section=header&text=Thembelihle%20Queeneth%20Maluka&fontSize=50&fontColor=fff&animation=fadeIn&fontAlignY=38&desc=Full%20Stack%20Developer%20%7C%20Building%20Digital%20Dreams&descSize=20&descAlignY=55)
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@400;500&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap');
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=FFC107&center=true&vCenter=true&width=600&lines=16+Months+Development+Experience;3+Months+UI%2FUX+Design+Experience;Passionate+About+Web+Development;Always+Learning%2C+Always+Growing)](https://git.io/typing-svg)
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #0a0a0f;
+    --card: #12121a;
+    --card2: #1a1a26;
+    --gold: #f4c542;
+    --coral: #ff6b6b;
+    --teal: #4ecdc4;
+    --purple: #a78bfa;
+    --text: #e8e8f0;
+    --muted: #7a7a9a;
+    --border: rgba(255,255,255,0.07);
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    padding: 0;
+  }
+
+  .wrap { max-width: 860px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+
+  .hero {
+    text-align: center;
+    padding: 3rem 1rem 2.5rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -60px; left: 50%; transform: translateX(-50%);
+    width: 500px; height: 300px;
+    background: radial-gradient(ellipse, rgba(167,139,250,0.15) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .avatar-ring {
+    width: 96px; height: 96px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--gold), var(--coral), var(--purple));
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 1.5rem;
+    padding: 3px;
+  }
+
+  .avatar-inner {
+    width: 90px; height: 90px;
+    border-radius: 50%;
+    background: var(--card);
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Syne', sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #2a1a3e, #1a2e3e);
+    color: var(--gold);
+  }
+
+  .hero-name {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(1.8rem, 5vw, 2.8rem);
+    font-weight: 800;
+    background: linear-gradient(135deg, #ffffff 30%, var(--gold) 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero-role {
+    font-size: 1rem;
+    color: var(--muted);
+    font-weight: 300;
+    letter-spacing: 0.04em;
+    margin-bottom: 1.5rem;
+  }
+
+  .pill-row {
+    display: flex; flex-wrap: wrap; gap: 8px;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .pill {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    padding: 4px 12px;
+    border-radius: 100px;
+    border: 1px solid var(--border);
+    background: var(--card);
+    color: var(--muted);
+    letter-spacing: 0.05em;
+  }
+
+  .pill.gold { border-color: rgba(244,197,66,0.3); color: var(--gold); background: rgba(244,197,66,0.05); }
+  .pill.coral { border-color: rgba(255,107,107,0.3); color: var(--coral); background: rgba(255,107,107,0.05); }
+  .pill.teal { border-color: rgba(78,205,196,0.3); color: var(--teal); background: rgba(78,205,196,0.05); }
+
+  .cta-row {
+    display: flex; flex-wrap: wrap; gap: 10px;
+    justify-content: center;
+  }
+
+  .btn {
+    padding: 9px 20px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: 'DM Sans', sans-serif;
+    cursor: pointer;
+    border: 1px solid var(--border);
+    text-decoration: none;
+    transition: all 0.2s;
+    display: inline-flex; align-items: center; gap: 6px;
+  }
+
+  .btn-primary {
+    background: var(--gold);
+    color: #1a1000;
+    border-color: var(--gold);
+    font-weight: 600;
+  }
+
+  .btn-ghost { background: transparent; color: var(--text); }
+  .btn:hover { opacity: 0.85; transform: translateY(-1px); }
+
+  .section { margin: 3rem 0; }
+
+  .section-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 1.25rem;
+    display: flex; align-items: center; gap: 10px;
+  }
+
+  .section-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  .skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 10px;
+  }
+
+  .skill-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    transition: border-color 0.2s, transform 0.2s;
+    cursor: default;
+  }
+
+  .skill-card:hover {
+    border-color: rgba(244,197,66,0.25);
+    transform: translateY(-2px);
+  }
+
+  .skill-icon {
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .skill-name {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--text);
+    font-family: 'DM Mono', monospace;
+  }
+
+  .skill-dot {
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--gold);
+    opacity: 0.5;
+  }
+
+  .skill-cat {
+    font-size: 10px;
+    color: var(--muted);
+    margin-top: -2px;
+  }
+
+  .timeline {
+    position: relative;
+    padding-left: 28px;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 7px; top: 8px; bottom: 8px;
+    width: 1px;
+    background: linear-gradient(to bottom, var(--purple), var(--gold), var(--coral));
+    opacity: 0.4;
+  }
+
+  .t-item {
+    position: relative;
+    margin-bottom: 1.75rem;
+  }
+
+  .t-item::before {
+    content: '';
+    position: absolute;
+    left: -24px; top: 6px;
+    width: 9px; height: 9px;
+    border-radius: 50%;
+    background: var(--gold);
+    border: 2px solid var(--bg);
+    box-shadow: 0 0 0 1px rgba(244,197,66,0.4);
+  }
+
+  .t-year {
+    font-family: 'Syne', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--gold);
+    margin-bottom: 3px;
+  }
+
+  .t-title {
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--text);
+    margin-bottom: 4px;
+  }
+
+  .t-desc {
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.55;
+  }
+
+  .stats-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 12px;
+  }
+
+  .stat-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.25rem 1rem;
+    text-align: center;
+  }
+
+  .stat-num {
+    font-family: 'Syne', sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--gold);
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+
+  .stat-label {
+    font-size: 12px;
+    color: var(--muted);
+    font-weight: 300;
+  }
+
+  .code-block {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem;
+    font-family: 'DM Mono', monospace;
+    font-size: 12.5px;
+    line-height: 1.7;
+    color: #c8c8e8;
+    overflow-x: auto;
+  }
+
+  .code-block .kw { color: var(--purple); }
+  .code-block .str { color: #79c7a7; }
+  .code-block .key { color: #f4c542; }
+  .code-block .comment { color: var(--muted); font-style: italic; }
+  .code-block .num { color: var(--coral); }
+
+  .goal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 10px;
+  }
+
+  .goal-item {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 14px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 13px;
+    color: var(--text);
+  }
+
+  .goal-dot {
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--teal);
+    flex-shrink: 0;
+    margin-top: 5px;
+  }
+
+  .quote-box {
+    border-left: 3px solid var(--gold);
+    padding: 1rem 1.5rem;
+    background: rgba(244,197,66,0.04);
+    border-radius: 0 10px 10px 0;
+    font-style: italic;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .ai-badge {
+    background: linear-gradient(135deg, rgba(167,139,250,0.15), rgba(78,205,196,0.1));
+    border: 1px solid rgba(167,139,250,0.3);
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+  }
+
+  .ai-icon {
+    font-size: 1.8rem;
+    flex-shrink: 0;
+  }
+
+  .ai-title {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    color: var(--purple);
+    font-size: 15px;
+    margin-bottom: 4px;
+  }
+
+  .ai-desc {
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+
+  .divider {
+    height: 1px;
+    background: var(--border);
+    margin: 2.5rem 0;
+  }
+
+  .footer {
+    text-align: center;
+    padding: 2rem 0 0;
+    font-size: 13px;
+    color: var(--muted);
+  }
+
+  .footer strong { color: var(--gold); }
+
+  .tab-row {
+    display: flex; gap: 4px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 4px;
+    margin-bottom: 1.25rem;
+    flex-wrap: wrap;
+  }
+
+  .tab {
+    padding: 6px 14px;
+    border-radius: 7px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    color: var(--muted);
+    font-family: 'DM Sans', sans-serif;
+    transition: all 0.15s;
+  }
+
+  .tab.active {
+    background: rgba(244,197,66,0.12);
+    color: var(--gold);
+  }
+
+  .tab-content { display: none; }
+  .tab-content.visible { display: block; }
+</style>
+
+<div class="wrap">
+
+  <div class="hero">
+    <div class="avatar-ring">
+      <div class="avatar-inner">TQ</div>
+    </div>
+    <div class="hero-name">Thembelihle Queeneth Maluka</div>
+    <div class="hero-role">Full Stack Developer &nbsp;·&nbsp; UI/UX Designer &nbsp;·&nbsp; AI Practitioner</div>
+    <div class="pill-row">
+      <span class="pill gold">South Africa</span>
+      <span class="pill">TUT Computer Science</span>
+      <span class="pill coral">She / Her</span>
+      <span class="pill teal">Open to Opportunities</span>
+    </div>
+    <div class="cta-row">
+      <button class="btn btn-primary" onclick="openLink('https://thembelihle-dev.vercel.app/')">Portfolio</button>
+      <button class="btn btn-ghost" onclick="openLink('mailto:malukathembelihle95@gmail.com')">Get in touch</button>
+    </div>
+  </div>
+
+  <div class="stats-row section">
+    <div class="stat-card">
+      <div class="stat-num">16</div>
+      <div class="stat-label">months dev experience</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">3</div>
+      <div class="stat-label">months UI/UX in Figma</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">15+</div>
+      <div class="stat-label">technologies mastered</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">5</div>
+      <div class="stat-label">years of perseverance</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Technical Skills</div>
+
+    <div class="tab-row">
+      <button class="tab active" onclick="switchTab(this,'frontend')">Frontend</button>
+      <button class="tab" onclick="switchTab(this,'backend')">Backend</button>
+      <button class="tab" onclick="switchTab(this,'data')">Databases</button>
+      <button class="tab" onclick="switchTab(this,'lang')">Languages</button>
+      <button class="tab" onclick="switchTab(this,'tools')">Tools & Design</button>
+    </div>
+
+    <div id="frontend" class="tab-content visible skill-grid">
+      <div class="skill-card"><div class="skill-icon">🌐</div><div class="skill-name">HTML5</div><div class="skill-cat">Markup</div></div>
+      <div class="skill-card"><div class="skill-icon">🎨</div><div class="skill-name">CSS3</div><div class="skill-cat">Styling</div></div>
+      <div class="skill-card"><div class="skill-icon">⚡</div><div class="skill-name">JavaScript</div><div class="skill-cat">Core language</div></div>
+      <div class="skill-card"><div class="skill-icon">🔷</div><div class="skill-name">TypeScript</div><div class="skill-cat">Typed JS</div></div>
+      <div class="skill-card"><div class="skill-icon">⚛️</div><div class="skill-name">React</div><div class="skill-cat">UI library</div></div>
+      <div class="skill-card"><div class="skill-icon">📱</div><div class="skill-name">React Native</div><div class="skill-cat">Mobile</div></div>
+      <div class="skill-card"><div class="skill-icon">💨</div><div class="skill-name">Tailwind CSS</div><div class="skill-cat">Utility CSS</div></div>
+      <div class="skill-card"><div class="skill-icon">🅱️</div><div class="skill-name">Bootstrap</div><div class="skill-cat">Framework</div></div>
+    </div>
+
+    <div id="backend" class="tab-content skill-grid">
+      <div class="skill-card"><div class="skill-icon">🟢</div><div class="skill-name">Node.js</div><div class="skill-cat">Runtime</div></div>
+      <div class="skill-card"><div class="skill-icon">🚂</div><div class="skill-name">Express.js</div><div class="skill-cat">Web framework</div></div>
+      <div class="skill-card"><div class="skill-icon">🐘</div><div class="skill-name">PHP</div><div class="skill-cat">Server-side</div></div>
+      <div class="skill-card"><div class="skill-icon">🐍</div><div class="skill-name">Python</div><div class="skill-cat">Scripting & AI</div></div>
+      <div class="skill-card"><div class="skill-icon">🔗</div><div class="skill-name">REST API</div><div class="skill-cat">API design</div></div>
+    </div>
+
+    <div id="data" class="tab-content skill-grid">
+      <div class="skill-card"><div class="skill-icon">🐘</div><div class="skill-name">PostgreSQL</div><div class="skill-cat">Relational DB</div></div>
+      <div class="skill-card"><div class="skill-icon">🐬</div><div class="skill-name">MySQL</div><div class="skill-cat">Relational DB</div></div>
+    </div>
+
+    <div id="lang" class="tab-content skill-grid">
+      <div class="skill-card"><div class="skill-icon">☕</div><div class="skill-name">Java</div><div class="skill-cat">OOP</div></div>
+      <div class="skill-card"><div class="skill-icon">💜</div><div class="skill-name">C#</div><div class="skill-cat">.NET</div></div>
+      <div class="skill-card"><div class="skill-icon">🐍</div><div class="skill-name">Python</div><div class="skill-cat">Multi-purpose</div></div>
+      <div class="skill-card"><div class="skill-icon">🐘</div><div class="skill-name">PHP</div><div class="skill-cat">Web scripting</div></div>
+    </div>
+
+    <div id="tools" class="tab-content skill-grid">
+      <div class="skill-card"><div class="skill-icon">🎭</div><div class="skill-name">Figma</div><div class="skill-cat">UI/UX Design</div></div>
+      <div class="skill-card"><div class="skill-icon">▲</div><div class="skill-name">Vercel</div><div class="skill-cat">Deployment</div></div>
+      <div class="skill-card"><div class="skill-icon">📬</div><div class="skill-name">Postman</div><div class="skill-cat">API testing</div></div>
+      <div class="skill-card"><div class="skill-icon">📄</div><div class="skill-name">Swagger</div><div class="skill-cat">API docs</div></div>
+      <div class="skill-card"><div class="skill-icon">⚡</div><div class="skill-name">Thunder Client</div><div class="skill-cat">VS Code tool</div></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">AI Proficiency</div>
+    <div class="ai-badge">
+      <div class="ai-icon">🤖</div>
+      <div>
+        <div class="ai-title">AI-Augmented Development</div>
+        <div class="ai-desc">Experienced in leveraging AI tools effectively — from prompt engineering and using LLMs like Claude, ChatGPT, and Copilot to accelerate development, debug complex issues, and generate design ideas. Understands how to critically evaluate AI output, integrate it into real workflows, and use Python for AI-adjacent scripting and automation. Not just using AI — using it wisely.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">My Journey</div>
+    <div class="timeline">
+      <div class="t-item">
+        <div class="t-year">2019 — The Spark</div>
+        <div class="t-desc">WeThinkCode visited my Grade 12 school. One mention of developer salaries and my curiosity was ignited. This was my first glimpse into software development.</div>
+      </div>
+      <div class="t-item">
+        <div class="t-year">2020 — Gap Year & Discovery</div>
+        <div class="t-desc">No university accepted me. I watched The Social Network and became obsessed with how Facebook was built. Tech wasn't just a career anymore — it was a fascination.</div>
+      </div>
+      <div class="t-item">
+        <div class="t-year">2021 — The Beginning</div>
+        <div class="t-desc">Applied to TUT for Computer Science — not even knowing how to use a PC properly. Typed my first "Hello World" and felt like I'd done something extraordinary.</div>
+      </div>
+      <div class="t-item">
+        <div class="t-year">2022 — The Struggle</div>
+        <div class="t-desc">The learning curve was brutal. I questioned myself constantly. This was the year that tested my resolve — and I chose to stay.</div>
+      </div>
+      <div class="t-item">
+        <div class="t-year">2023 — The Turnaround</div>
+        <div class="t-desc">Concepts began clicking. Academic confidence grew. The pieces were finally falling into place and I could feel a shift in my understanding.</div>
+      </div>
+      <div class="t-item">
+        <div class="t-year">2024 — The Fire Ignites</div>
+        <div class="t-desc">Everything changed. I stopped coding to pass and started coding because I loved it. Building, creating, solving — the passion was real and unstoppable.</div>
+      </div>
+      <div class="t-item">
+        <div class="t-year">2025–2026 — Present Day</div>
+        <div class="t-desc">16 months of development experience, 3 months of UI/UX design, PHP, Python, and AI tooling now in the toolkit. Actively seeking a team where I can grow and contribute.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">What I Bring</div>
+    <div class="code-block">
+<span class="kw">const</span> <span class="key">myValue</span> = {<br>
+&nbsp;&nbsp;<span class="key">frontend</span>: [<span class="str">"React"</span>, <span class="str">"TypeScript"</span>, <span class="str">"Tailwind"</span>, <span class="str">"React Native"</span>],<br>
+&nbsp;&nbsp;<span class="key">backend</span>: [<span class="str">"Node.js"</span>, <span class="str">"Express"</span>, <span class="str">"PHP"</span>, <span class="str">"Python"</span>, <span class="str">"REST APIs"</span>],<br>
+&nbsp;&nbsp;<span class="key">databases</span>: [<span class="str">"PostgreSQL"</span>, <span class="str">"MySQL"</span>],<br>
+&nbsp;&nbsp;<span class="key">design</span>: [<span class="str">"Figma"</span>, <span class="str">"UI/UX principles"</span>, <span class="str">"Responsive design"</span>],<br>
+&nbsp;&nbsp;<span class="key">ai</span>: [<span class="str">"Prompt engineering"</span>, <span class="str">"LLM integration"</span>, <span class="str">"GitHub Copilot"</span>, <span class="str">"AI-assisted dev"</span>],<br>
+&nbsp;&nbsp;<span class="key">softSkills</span>: [<span class="str">"Problem solver"</span>, <span class="str">"Quick learner"</span>, <span class="str">"Resilient"</span>, <span class="str">"Self-driven"</span>],<br>
+&nbsp;&nbsp;<span class="key">superpower</span>: <span class="str">"Started from zero — so I build with empathy"</span><br>
+}
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Goals</div>
+    <div class="goal-grid">
+      <div class="goal-item"><div class="goal-dot"></div>Join an innovative tech company where I can grow</div>
+      <div class="goal-item"><div class="goal-dot"></div>Build impactful full-stack products</div>
+      <div class="goal-item"><div class="goal-dot"></div>Master Next.js &amp; server-side rendering</div>
+      <div class="goal-item"><div class="goal-dot"></div>Deepen Python for AI and automation</div>
+      <div class="goal-item"><div class="goal-dot"></div>Advance Figma design systems &amp; prototyping</div>
+      <div class="goal-item"><div class="goal-dot"></div>Contribute to open-source communities</div>
+      <div class="goal-item"><div class="goal-dot"></div>Explore Docker &amp; cloud platforms (AWS/GCP)</div>
+      <div class="goal-item"><div class="goal-dot"></div>Launch a social platform for book lovers</div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="quote-box">
+    "From not knowing how to use a PC to building full-stack applications — if I can do it, anyone can. It's all about persistence, passion, and never letting a hard year write the final chapter."
+  </div>
+
+  <div class="footer" style="margin-top: 2rem;">
+    Made with passion by <strong>Thembelihle Queeneth Maluka</strong><br>
+    <span style="font-size: 12px; margin-top: 4px; display: block;">From confusion to passion &nbsp;·&nbsp; From struggle to strength &nbsp;·&nbsp; This is just the beginning.</span>
+  </div>
 
 </div>
 
----
-
-## About Me
-
-```typescript
-const developer = {
-  name: "Thembelihle Queeneth Maluka",
-  pronouns: "She/Her",
-  location: "South Africa",
-  education: "Diploma in Computer Science",
-  university: "Tshwane University of Technology",
-  experience: {
-    development: "16 months",
-    design: "3 months (Figma)"
-  },
-  portfolio: "https://thembelihle-dev.vercel.app/",
-  
-  currentFocus: "Seeking opportunities at innovative tech companies",
-  
-  interests: {
-    technical: ["Web Development", "Full Stack", "UI/UX Design"],
-    personal: ["Reading", "Movies", "TV Series"]
-  },
-  
-  philosophy: "From confusion to passion - proving that persistence pays off"
-};
-```
-
-## Connect With Me
-
-<div align="center">
-
-[![Portfolio](https://img.shields.io/badge/Portfolio-FF6B35?style=for-the-badge&logo=vercel&logoColor=white)](https://thembelihle-dev.vercel.app/)
-[![Email](https://img.shields.io/badge/Email-DC3545?style=for-the-badge&logo=gmail&logoColor=white)](mailto:malukathembelihle95@gmail.com)
-[![Phone](https://img.shields.io/badge/Phone-FFC107?style=for-the-badge&logo=phone&logoColor=black)](tel:0793316193)
-
-</div>
-
----
-
-## Technical Skills
-
-### Frontend Development
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-
-### Styling Frameworks
-![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
-
-### Backend Development
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
-
-### Databases
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-
-### Programming Languages
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
-
-### Design & Tools
-![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
-![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
-![Swagger](https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=black)
-![Thunder Client](https://img.shields.io/badge/Thunder_Client-2C2A4A?style=for-the-badge&logo=thunderclient&logoColor=white)
-
-### APIs
-![REST API](https://img.shields.io/badge/REST_API-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-
----
-
-## GitHub Statistics
-
-<div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=ThembelihleQueeneth&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=FFC107&icon_color=DC3545&text_color=FFFFFF&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ThembelihleQueeneth&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=FFC107&text_color=FFFFFF&langs_count=8"/>
-</div>
-
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ThembelihleQueeneth&theme=radical&hide_border=true&background=0D1117&stroke=DC3545&ring=FFC107&fire=DC3545&currStreakLabel=FFC107&sideNums=FFFFFF&sideLabels=FFFFFF&dates=8B949E" alt="GitHub Streak"/>
-</div>
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ThembelihleQueeneth&theme=react-dark&hide_border=true&bg_color=0D1117&color=FFC107&line=DC3545&point=FFFFFF&area=true&area_color=DC3545" width="95%" alt="Contribution Graph"/>
-</div>
-
----
-
-## My Journey: From Curiosity to Passion
-
-<div align="center">
-
-| Year | The Story |
-|------|-----------|
-| **2019** | **The Spark** - WeThinkCode visited my school in Grade 12. When they mentioned a starting salary of R20k for developers, I was immediately hooked. This was my introduction to the world of software development. |
-| **2020** | **Gap Year & Discovery** - No university accepted me, so I took a gap year. During this time, I watched *The Social Network* and became fascinated with how Facebook was created. The intrigue was real, and tech became my obsession. |
-| **2021** | **The Beginning** - Applied to TUT for Computer Science. I didn't even know how to use a PC properly. Everything was confusing. But then I typed my first "Hello World" and got so excited - I genuinely thought I did something amazing! |
-| **2022** | **The Struggle** - I thought once I learned to use a PC, things would be easy. I was wrong. This year was incredibly hard. The learning curve was steep, and I questioned myself often. |
-| **2023** | **The Turnaround** - Things started clicking. I began improving academically, understanding concepts better, and my confidence grew. The pieces were finally coming together. |
-| **2024** | **The Fire Ignites** - This was the year everything changed. I genuinely started ENJOYING coding. The passion ignited, and suddenly it wasn't just about passing - it was about creating, building, and solving problems. |
-| **2025-2026** | **Present Day** - The passion continues to grow stronger. Now with 16 months of development experience and 3 months of UI/UX design experience in Figma, I'm actively seeking to join an innovative tech company where I can make an impact. |
-
-</div>
-
----
-
-## Current Goals
-
-```javascript
-const goals2025 = {
-  career: [
-    "Join an innovative tech company where I can grow and contribute",
-    "Build impactful projects that solve real-world problems",
-    "Contribute to open-source communities",
-    "Continue expanding my UI/UX design skills"
-  ],
-  
-  learning: [
-    "Advanced React patterns and architecture",
-    "Next.js and server-side rendering",
-    "GraphQL and modern API design",
-    "Advanced Figma prototyping and design systems",
-    "Docker and containerization",
-    "Cloud platforms (AWS/Azure/GCP)"
-  ],
-  
-  dreamProjects: [
-    "Social platform connecting book enthusiasts",
-    "AI-powered movie recommendation engine",
-    "Full-stack e-commerce solution with beautiful UI",
-    "Developer portfolio template system"
-  ],
-  
-  mantra: "From not knowing how to use a PC to building full-stack applications - if I can do it, anyone can. It's all about persistence and passion."
-};
-```
-
----
-
-## What I Bring to the Table
-
-```typescript
-const myValue = {
-  technicalSkills: {
-    frontend: ["React", "React Native", "TypeScript", "Tailwind", "Bootstrap"],
-    backend: ["Node.js", "Express", "RESTful APIs"],
-    databases: ["PostgreSQL", "MySQL"],
-    design: ["Figma", "UI/UX principles", "Responsive design"]
-  },
-  
-  softSkills: [
-    "Problem-solving mindset",
-    "Quick learner (went from PC novice to full-stack in 5 years)",
-    "Resilient (pushed through the difficult 2022 period)",
-    "Passionate and self-driven",
-    "Growth mindset - always eager to learn"
-  ],
-  
-  uniqueJourney: "I understand what it's like to start from absolute zero. This gives me empathy for users and drives me to create intuitive, accessible applications.",
-  
-  workEthic: "When the fire ignited in 2024, it hasn't stopped burning. I code because I love it, not just because I have to."
-};
-```
-
----
-
-## Fun Facts About My Journey
-
-- Started knowing nothing about PCs, now building full-stack applications
-- Took inspiration from Facebook's origin story to pursue tech
-- First "Hello World" felt like winning an award
-- Survived the tough 2022 period and came back stronger
-- The passion that ignited in 2024 keeps growing every day
-- Balance coding with design - love creating both functional and beautiful interfaces
-
----
-
-## Quote That Defines My Journey
-
-<div align="center">
-
-![Quote](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical&quote=Success%20is%20not%20final%2C%20failure%20is%20not%20fatal%3A%20it%20is%20the%20courage%20to%20continue%20that%20counts.&author=Winston%20Churchill)
-
-</div>
-
----
-
-## Profile Views
-
-<div align="center">
-
-![Profile Views](https://komarev.com/ghpvc/?username=ThembelihleQueeneth&color=DC3545&style=for-the-badge&label=PROFILE+VIEWS)
-[![GitHub Followers](https://img.shields.io/github/followers/ThembelihleQueeneth?style=for-the-badge&color=FFC107&labelColor=0D1117&logo=github)](https://github.com/ThembelihleQueeneth?tab=followers)
-
-</div>
-
----
-
-<div align="center">
-
-### "From confusion to passion, from struggle to strength - this is just the beginning."
-
-![Footer](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,2,3&height=120&section=footer)
-
-**Made with passion by Thembelihle Queeneth Maluka**
-
-*Proving that with persistence, anyone can code - even if you start not knowing how to use a PC.*
-
-</div>
+<script>
+function switchTab(el, id) {
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('visible'));
+  el.classList.add('active');
+  document.getElementById(id).classList.add('visible');
+}
+</script>
