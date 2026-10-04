@@ -79,11 +79,7 @@ const developer = {
 - Turning Figma designs into clean, accessible interfaces
 - Integrating **LLMs and AI tooling** into real applications and workflows
 
-**Role / Project highlights** *(add your own — employers, projects, outcomes)*
 
-- **[Company / Project name]** — [Your role]. [What you built, the tech used, and the result, e.g. "reduced load time by 40%"].
-- **[Company / Project name]** — [Your role]. [What you built, the tech used, and the result].
-- **[Company / Project name]** — [Your role]. [What you built, the tech used, and the result].
 
 ---
 
