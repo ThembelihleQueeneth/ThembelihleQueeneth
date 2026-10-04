@@ -1,8 +1,8 @@
 <div align="center">
 
-![Header](https://capsule-render.vercel.app/api?type=waving&color=0:a78bfa,50:f4c542,100:ff6b6b&height=220&section=header&text=Thembelihle%20Queeneth%20Maluka&fontSize=42&fontColor=fff&animation=fadeIn&fontAlignY=38&desc=Full%20Stack%20Developer%20%7C%20UI%2FUX%20Designer%20%7C%20AI%20Practitioner&descSize=18&descAlignY=58)
+![Header](https://capsule-render.vercel.app/api?type=waving&color=0:a78bfa,50:f4c542,100:ff6b6b&height=220&section=header&text=Thembelihle%20Queeneth%20Maluka&fontSize=42&fontColor=fff&animation=fadeIn&fontAlignY=38&desc=Full%20Stack%20Developer%20%7C%20Aspiring%20AI%20Engineer%20%7C%20Microsoft%20Certified&descSize=18&descAlignY=58)
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=DM+Mono&weight=500&size=20&duration=3000&pause=1000&color=F4C542&center=true&vCenter=true&width=700&lines=16+Months+Full+Stack+Development;PHP+%7C+Python+%7C+React+%7C+Node.js;AI-Augmented+Development;Building+with+Passion+%26+Purpose)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=DM+Mono&weight=500&size=20&duration=3000&pause=1000&color=F4C542&center=true&vCenter=true&width=700&lines=2%2B+Years+in+Software+Development;Full+Stack+%7C+React+%7C+Node.js+%7C+Python+%7C+PHP;Building+AI+Apps+%26+Agents+on+Azure;Working+towards+AI-103+%26+DP-420)](https://git.io/typing-svg)
 
 <br/>
 
@@ -20,28 +20,19 @@ const developer = {
   name     : "Thembelihle Queeneth Maluka",
   pronouns : "She / Her",
   location : "South Africa 🇿🇦",
+  role     : "Full Stack Developer → AI Engineer",
   education: "Diploma in Computer Science — Tshwane University of Technology",
 
   experience: {
-    development : "16 months",
-    uiux_design : "3 months (Figma)",
+    softwareDevelopment : "2+ years",
+    uiuxDesign          : "Figma",
   },
+
+  certifications: ["DP-900", "AI-900", "AB-900"],
+  inProgress    : ["AI-103", "DP-420"],
 
   portfolio: "https://thembelihle-dev.vercel.app/",
   email    : "malukathembelihle95@gmail.com",
-
-  skills: {
-    frontend  : ["React", "React Native", "TypeScript", "JavaScript", "Tailwind", "Bootstrap"],
-    backend   : ["Node.js", "Express.js", "PHP", "Python", "REST APIs"],
-    databases : ["PostgreSQL", "MySQL"],
-    languages : ["Java", "C#", "PHP", "Python"],
-    design    : ["Figma", "UI/UX Principles", "Responsive Design"],
-    ai        : ["Prompt Engineering", "LLM Integration", "GitHub Copilot", "AI-Assisted Dev"],
-    tools     : ["Postman", "Swagger", "Thunder Client", "Vercel"],
-  },
-
-  superpower: "Started from zero — so I build with empathy",
-  mantra    : "From confusion to passion. From struggle to strength.",
 };
 ```
 
@@ -53,21 +44,46 @@ const developer = {
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-FF6B35?style=for-the-badge&logo=vercel&logoColor=white)](https://thembelihle-dev.vercel.app/)
 [![Email](https://img.shields.io/badge/Email-f4c542?style=for-the-badge&logo=gmail&logoColor=black)](mailto:malukathembelihle95@gmail.com)
-[![Phone](https://img.shields.io/badge/Phone-a78bfa?style=for-the-badge&logo=phone&logoColor=white)](tel:0793316193)
 
 </div>
 
 ---
 
-## By The Numbers
+## Certifications
 
 <div align="center">
 
-| 🗓️ 16 Months | 🎨 3 Months | 💻 15+ Technologies | 🔥 5 Years |
-|:---:|:---:|:---:|:---:|
-| Development Experience | UI/UX in Figma | Mastered | Of Perseverance |
+| Status | Exam | Certification |
+|:------:|:----:|---------------|
+| ✅ Earned | **DP-900** | Microsoft Certified: Azure Data Fundamentals |
+| ✅ Earned | **AI-900** | Microsoft Certified: Azure AI Fundamentals |
+| ✅ Earned | **AB-900** | Microsoft 365 Certified: Copilot and Agent Administration Fundamentals |
+| 🎯 In progress | **AI-103** | Azure AI Apps and Agents Developer Associate |
+| 🎯 In progress | **DP-420** | Azure Cosmos DB Developer Specialty |
 
 </div>
+
+![Azure](https://img.shields.io/badge/Microsoft_Azure-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white)
+![Microsoft 365](https://img.shields.io/badge/Microsoft_365_Copilot-D83B01?style=for-the-badge&logo=microsoft365&logoColor=white)
+
+---
+
+## Experience
+
+> 💼 **2+ years** building and shipping software across the full stack.
+
+**What I work on**
+
+- Building responsive, production-ready web and mobile apps with **React, React Native, TypeScript, Node.js and PHP**
+- Designing and consuming **REST APIs**, backed by **PostgreSQL** and **MySQL**
+- Turning Figma designs into clean, accessible interfaces
+- Integrating **LLMs and AI tooling** into real applications and workflows
+
+**Role / Project highlights** *(add your own — employers, projects, outcomes)*
+
+- **[Company / Project name]** — [Your role]. [What you built, the tech used, and the result, e.g. "reduced load time by 40%"].
+- **[Company / Project name]** — [Your role]. [What you built, the tech used, and the result].
+- **[Company / Project name]** — [Your role]. [What you built, the tech used, and the result].
 
 ---
 
@@ -111,17 +127,41 @@ const developer = {
 
 ---
 
-## 🤖 AI Proficiency
+## 🤖 AI Engineering Focus
 
-> I don't just use AI — I use it **wisely**.
+I'm building towards an **AI engineer** role, combining my full stack background with Azure's AI platform.
 
-Experienced in leveraging AI tools to accelerate development and design workflows:
+- **AI apps & agents** — learning to build, evaluate and deploy generative AI solutions and agents on Azure (Microsoft Foundry) 
+- **Prompt engineering & LLM integration** — designing reliable prompts and wiring LLMs into real products
+- **Python for AI** — scripting, automation and AI-adjacent tooling
+- **Data foundations** — Azure data services, with Cosmos DB next on my learning path
+- **AI-assisted development** — Claude, ChatGPT and GitHub Copilot in my daily workflow, with critical review of every output
 
-- **Prompt Engineering** — crafting precise prompts to get reliable, production-ready output from LLMs
-- **LLM Integration** — working with Claude, ChatGPT, and GitHub Copilot for coding, debugging, and ideation
-- **Python for AI** — scripting, automation, and AI-adjacent tooling with Python
-- **Critical Evaluation** — knowing when to trust AI output, when to verify it, and when to override it
-- **Workflow Integration** — embedding AI tools naturally into real development cycles, not just experimenting
+---
+
+## 2025–2026 Goals
+
+```javascript
+const goals = {
+  certifications: [
+    "AI-103 — Azure AI Apps and Agents Developer Associate",
+    "DP-420 — Azure Cosmos DB Developer Specialty",
+  ],
+
+  learning: [
+    "Building AI agents and RAG solutions on Azure / Microsoft Foundry",
+    "Next.js and server-side rendering",
+    "Docker and containerization",
+    "GraphQL and modern API design",
+  ],
+
+  career: [
+    "Join a team building AI-powered products",
+    "Ship full-stack solutions that solve real problems",
+    "Contribute to open source",
+  ],
+};
+```
 
 ---
 
@@ -142,108 +182,12 @@ Experienced in leveraging AI tools to accelerate development and design workflow
 
 ---
 
-## My Journey
-
 <div align="center">
 
-| Year | Chapter | Story |
-|:----:|:-------:|-------|
-| **2019** | ✨ The Spark | WeThinkCode visited my Grade 12 school. One mention of developer salaries and my curiosity was permanently ignited. |
-| **2020** | 🎬 Discovery | No university accepted me. I watched *The Social Network* and became obsessed with how things get built. Tech wasn't just a career — it was a fascination. |
-| **2021** | 🌱 The Beginning | Applied to TUT for Computer Science — barely knowing how to use a PC. Typed my first `Hello World` and felt like I'd created something extraordinary. |
-| **2022** | 💪 The Struggle | The learning curve was brutal. I questioned myself constantly. This year tested my resolve — and I chose to stay. |
-| **2023** | 🔄 The Turnaround | Concepts started clicking. Academic confidence grew. The pieces were finally coming together. |
-| **2024** | 🔥 The Fire Ignites | Everything changed. I stopped coding to pass and started coding because I **loved** it. Building. Creating. Solving. |
-| **2025–26** | 🚀 Present Day | PHP, Python, and AI tooling now in the stack. 16 months of dev experience. Actively seeking a team to grow with and contribute to. |
-
-</div>
-
----
-
-## What I Bring
-
-```javascript
-const myValue = {
-  technical: {
-    frontend  : ["React", "TypeScript", "Tailwind", "React Native"],
-    backend   : ["Node.js", "Express", "PHP", "Python", "REST APIs"],
-    databases : ["PostgreSQL", "MySQL"],
-    design    : ["Figma", "UI/UX Principles", "Responsive Design"],
-    ai        : ["Prompt Engineering", "LLM Integration", "AI-Assisted Dev"],
-  },
-
-  softSkills: [
-    "Problem-solving mindset",
-    "Quick learner — went from PC novice to full-stack in 5 years",
-    "Resilient — pushed through a brutal 2022 and came back stronger",
-    "Passionate and self-driven",
-    "Growth mindset — always eager to learn and adapt",
-  ],
-
-  uniqueEdge:
-    "I understand what it means to start from absolute zero. " +
-    "This gives me empathy for users and drives me to build " +
-    "interfaces that are intuitive, accessible, and human.",
-
-  workEthic:
-    "The fire that ignited in 2024 has not stopped burning. " +
-    "I code because I love it — not because I have to.",
-};
-```
-
----
-
-## 2025–2026 Goals
-
-```javascript
-const goals = {
-  career: [
-    "Join an innovative tech company where I can grow and contribute",
-    "Build impactful full-stack products that solve real problems",
-    "Contribute to open-source communities",
-  ],
-
-  learning: [
-    "Master Next.js and server-side rendering",
-    "Deepen Python skills for AI and automation",
-    "Advanced Figma design systems and prototyping",
-    "Docker and containerization",
-    "Cloud platforms — AWS / Azure / GCP",
-    "GraphQL and modern API design",
-  ],
-
-  dreamProjects: [
-    "Social platform connecting book enthusiasts",
-    "AI-powered movie recommendation engine",
-    "Full-stack e-commerce solution with a beautiful UI",
-    "Developer portfolio template system",
-  ],
-};
-```
-
----
-
-## Fun Facts
-
-- 🖥️ Started not knowing how to use a PC — now building full-stack apps
-- 🎬 Took inspiration from *The Social Network* to pursue tech
-- 🌍 First `Hello World` felt like winning an award
-- 💪 Survived 2022 and came back stronger every single time
-- 🤖 Uses AI as a superpower, not a shortcut
-- 🎨 Loves creating things that are both functional *and* beautiful
-
----
-
-<div align="center">
-
-### *"From confusion to passion. From struggle to strength. This is just the beginning."*
+### *Open to opportunities in full stack and AI engineering.*
 
 <br/>
 
 ![Footer](https://capsule-render.vercel.app/api?type=waving&color=0:a78bfa,50:f4c542,100:ff6b6b&height=120&section=footer)
-
-**Made with 🔥 by Thembelihle Queeneth Maluka**
-
-*Proving that with persistence, anyone can code — even if you start not knowing how to use a PC.*
 
 </div>
