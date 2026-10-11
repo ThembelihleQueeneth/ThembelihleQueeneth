@@ -1,126 +1,145 @@
-# 👋 Hi, I'm Thembelihle Queeneth Maluka!
+ <div align="center">
 
-### Software Developer | Aspiring AI Engineer | Microsoft Certified
+![Header](https://capsule-render.vercel.app/api?type=waving&color=0:a78bfa,50:f4c542,100:ff6b6b&height=220&section=header&text=Thembelihle%20Queeneth%20Maluka&fontSize=42&fontColor=fff&animation=fadeIn&fontAlignY=38&desc=Software%20Developer%20%7C%20Aspiring%20AI%20Engineer&descSize=18&descAlignY=58)
 
-I build websites, applications, and AI-powered solutions that solve real-world problems. I'm passionate about technology, continuous learning, and turning ideas into useful digital products.
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=DM+Mono&weight=500&size=20&duration=3000&pause=1000&color=F4C542&center=true&vCenter=true&width=700&lines=Building+useful+digital+solutions;Turning+ideas+into+applications;Exploring+AI+and+Cloud+Technology;Learning%2C+Building%2C+Growing)](https://git.io/typing-svg)
 
-📍 South Africa 🇿🇦  
-💻 Interested in Software Development, Artificial Intelligence, and Cloud Technology.
-
-<div align="center">
-
-[![Portfolio](https://img.shields.io/badge/🌐_Visit_My_Portfolio-a78bfa?style=for-the-badge)](https://thembelihle-dev.vercel.app/)
-[![Email Me](https://img.shields.io/badge/✉️_Contact_Me-f4c542?style=for-the-badge&logoColor=black)](mailto:malukathembelihle95@gmail.com)
-[![GitHub](https://img.shields.io/badge/Explore_My_Projects-24292e?style=for-the-badge&logo=github)](https://github.com/ThembelihleQueeneth)
-
-![Profile Views](https://komarev.com/ghpvc/?username=ThembelihleQueeneth&color=a78bfa&style=flat-square&label=Visitors)
+![Profile Views](https://komarev.com/ghpvc/?username=ThembelihleQueeneth&color=a78bfa&style=flat-square&label=PROFILE+VIEWS)
+[![GitHub Followers](https://img.shields.io/github/followers/ThembelihleQueeneth?style=flat-square&color=f4c542&labelColor=0d0d17&logo=github&label=FOLLOWERS)](https://github.com/ThembelihleQueeneth?tab=followers)
 
 </div>
 
 ---
 
-## 🌟 A Little About Me
+## 👋 Hello, I'm Thembelihle!
 
 I'm a Computer Science graduate from Tshwane University of Technology, currently pursuing an Advanced Diploma in Computer Science.
 
-My journey in technology has given me experience in building websites, developing applications, working with databases, and exploring artificial intelligence.
+I enjoy building websites, developing applications, exploring artificial intelligence, and finding ways technology can solve real-world problems.
 
-I enjoy solving problems, learning new tools, and creating technology that makes everyday tasks easier.
+My goal is to combine software development and AI to create useful, intelligent digital products.
 
-- 🎓 **Education:** Diploma in Computer Science, Tshwane University of Technology
-- 💼 **Experience:** Software development training and practical development experience
-- 🚀 **Career goal:** Become an AI Engineer who builds intelligent, useful applications
-- 🧠 **Currently learning:** AI application development, cloud technology, and data
-- 🌍 **Based in:** South Africa
+- 🇿🇦 Based in South Africa
+- 🎓 Computer Science graduate
+- 💻 Software Developer
+- 🤖 Aspiring AI Engineer
+- ☁️ Exploring Microsoft Azure and AI applications
+- 🔥 Committed to consistent learning and building
+
+<div align="center">
+
+[![Portfolio](https://img.shields.io/badge/🌐_My_Portfolio-a78bfa?style=for-the-badge)](https://thembelihle-dev.vercel.app/)
+[![Email](https://img.shields.io/badge/✉️_Email_Me-f4c542?style=for-the-badge&logo=gmail&logoColor=black)](mailto:malukathembelihle95@gmail.com)
+[![GitHub](https://img.shields.io/badge/My_Projects-24292e?style=for-the-badge&logo=github)](https://github.com/ThembelihleQueeneth?tab=repositories)
+
+</div>
 
 ---
 
-## 💡 What I Do
+## 🌟 What I Do
 
-Think of me as someone who helps turn an idea into a working digital product.
+You don't need to understand programming to understand what I do!
 
 ### 🌐 Website & Application Development
 
-I create websites and applications that help people and businesses work, share information, and manage their services online.
-
-Examples include business websites, inventory systems, dashboards, and mobile applications.
+I build websites and applications that help people and businesses share information, manage tasks, and deliver services online.
 
 ### 🤖 Artificial Intelligence
 
-I'm expanding my software development skills into AI, learning how to build applications that can understand questions, generate useful responses, and assist people with everyday tasks.
+I'm developing my AI engineering skills by learning how to build applications that can answer questions, assist users, and make information more useful.
 
 ### 🗄️ Data & Databases
 
-I work with databases that store and organise information, making it easier for applications to retrieve, update, and use data.
+I work with systems that store and organise information so applications can retrieve and use it effectively.
 
 ### 🎨 Design & User Experience
 
-I use tools such as Figma to plan how applications look and feel, with a focus on making them clear and easy to use.
+I use design tools to plan how applications look and feel, helping make them attractive, clear, and easy to navigate.
 
 ---
 
 ## 🛠️ My Technology Toolkit
 
-You don't need to know these tools to understand what I do. These are some of the technologies I use to build digital products.
+These are some of the tools I use to bring ideas to life.
 
-| Technology | What I use it for |
+| Technology | What it helps me do |
 |---|---|
-| React & TypeScript | Building interactive websites and user interfaces |
-| HTML & CSS | Creating the structure and appearance of websites |
-| Node.js & Express | Building the behind-the-scenes logic of applications |
-| Python | Programming, automation, and AI-related projects |
-| PostgreSQL & MySQL | Storing and managing application data |
-| Microsoft Azure | Exploring cloud services and AI solutions |
-| Git & GitHub | Managing code and collaborating on projects |
-| Figma | Designing and planning user interfaces |
+| React & TypeScript | Build interactive websites |
+| HTML & CSS | Create the structure and appearance of websites |
+| Node.js & Express | Build the behind-the-scenes logic of applications |
+| Python | Write programs, automate tasks, and explore AI |
+| PostgreSQL & MySQL | Store and manage information |
+| Microsoft Azure | Explore cloud computing and AI services |
+| Git & GitHub | Track changes and manage software projects |
+| Figma | Design application layouts and user experiences |
+| React Native | Build mobile applications |
 
-**Other technologies I've worked with:** JavaScript, PHP, Java, C#, React Native, Tailwind CSS, and Bootstrap.
+**Other technologies:** JavaScript, PHP, Java, C#, Tailwind CSS, and Bootstrap.
+
+---
+
+## 🎓 Education
+
+**Tshwane University of Technology**
+
+- Diploma in Computer Science
+- Advanced Diploma in Computer Science, in progress
+
+My education has given me a foundation in programming, databases, software development, and problem-solving.
 
 ---
 
 ## 🏆 Microsoft Certifications
 
-I've been developing my knowledge of Microsoft's data, AI, and cloud ecosystem through certification study and professional learning.
+My certifications reflect my growing knowledge of data, artificial intelligence, and Microsoft's technology ecosystem.
 
-- ✅ **Azure Data Fundamentals (DP-900)**  
-  Understanding how data is stored, processed, and managed in the cloud.
+- ✅ **DP-900 | Azure Data Fundamentals**  
+  Understanding how data is stored, processed, and managed.
 
-- ✅ **Azure AI Fundamentals (AI-900)**  
-  Learning the foundations of artificial intelligence and its real-world applications.
+- ✅ **AI-900 | Azure AI Fundamentals**  
+  Understanding AI concepts and their practical applications.
 
-- ✅ **Microsoft 365 Copilot and Agent Administration Fundamentals (AB-900)**  
-  Understanding Microsoft's AI-powered productivity tools and agent administration.
+- ✅ **AB-900 | Microsoft 365 Copilot and Agent Administration Fundamentals**  
+  Learning about AI-powered productivity tools and agent administration.
 
-### 🎯 My Next Learning Milestones
+### 🎯 Currently Working Towards
 
 - **AI-103:** Developing AI applications and intelligent agents.
-- **DP-420:** Learning to build and manage applications using Azure Cosmos DB.
+- **DP-420:** Learning to develop solutions using Azure Cosmos DB.
 
 ---
 
-## 🚀 Projects & Practical Experience
+## 🚀 Projects I'm Building
 
-I enjoy working on projects that combine software development with real-world problem-solving.
+I believe the best way to learn technology is to use it to solve real problems.
 
 ### 📦 SmartStock AI
 
-An inventory management project focused on helping small businesses manage their stock and explore AI-assisted predictions.
+An inventory management project designed to help small businesses keep track of their stock and explore AI-assisted predictions.
 
-**The goal:** Make stock management easier and help business owners make more informed decisions.
+**The problem it addresses:** Keeping track of products and making informed stock decisions can be challenging for small businesses.
+
+**My goal:** Make inventory management easier and explore how AI can support better decisions.
 
 ### 🤖 AI Chatbot
 
-A chatbot project designed to answer frequently asked questions about training programmes, applications, eligibility, and other useful information.
+A chatbot project designed to answer common questions about training programmes, applications, eligibility, and other important information.
 
-**The goal:** Help people find answers without having to wait for someone to respond manually.
+**The problem it addresses:** People often have to wait for someone to answer questions that are frequently asked.
+
+**My goal:** Make useful information easier to access through an AI-powered assistant.
 
 ### 💻 Websites & Business Applications
 
-Through my practical training and development experience, I've worked on websites, database operations, application features, and responsive interfaces.
+Through practical development experience, I've worked on websites, database operations, application features, and responsive interfaces.
 
-**The goal:** Build digital solutions that are useful, accessible, and easy to navigate.
+**My goal:** Build reliable digital products that are useful, accessible, and easy to navigate.
 
-*Explore my [GitHub repositories](https://github.com/ThembelihleQueeneth?tab=repositories) to see the code and development work behind my projects.*
+<div align="center">
+
+[![Explore Projects](https://img.shields.io/badge/Explore_My_GitHub_Projects-a78bfa?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ThembelihleQueeneth?tab=repositories)
+
+</div>
 
 ---
 
@@ -134,54 +153,97 @@ Developed practical software development skills through training and projects in
 ### Web Development & IT Experience | Hiteknology Solutions
 *September 2024 – June 2025*
 
-Gained practical experience in website development, database operations, responsive design, and general IT and administrative tasks.
+Gained hands-on experience in website development, database operations, responsive design, and IT and administrative tasks.
 
 ---
 
-## 🎯 Where I'm Headed
+## 🤖 My AI Engineering Journey
 
-My goal is to combine my software development background with artificial intelligence to build applications that solve meaningful problems.
+I'm working towards a career in AI engineering by combining my software development background with new AI skills.
 
-I'm especially interested in:
+My current areas of interest include:
 
 - Building AI-powered applications and assistants.
-- Developing reliable websites and software products.
-- Learning more about cloud computing and data.
-- Working with teams that create useful technology.
-- Continuously improving my technical and professional skills.
+- Learning to develop AI agents and retrieval-based AI solutions.
+- Exploring cloud-based AI services through Microsoft Azure.
+- Using Python for programming and automation.
+- Building software that solves practical problems.
 
-I'm building towards opportunities in **software development, AI application development, and related technology roles**.
+**My vision:** Create technology that doesn't just work, but genuinely helps people.
 
 ---
 
-## 📊 My GitHub Activity
+## 🔥 Consistency Is Part of My Journey
 
-Here's a snapshot of my coding activity and the programming languages represented in my public repositories.
+Learning to code is a journey of small, consistent improvements. I use my GitHub activity to track my progress, stay motivated, and keep building.
 
 <div align="center">
 
-<img height="180" src="https://github-readme-stats.vercel.app/api?username=ThembelihleQueeneth&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=f4c542&icon_color=a78bfa&text_color=FFFFFF" alt="GitHub contribution statistics"/>
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=ThembelihleQueeneth&theme=radical&hide_border=true&background=0D1117&stroke=a78bfa&ring=f4c542&fire=ff6b6b&currStreakLabel=f4c542&sideNums=FFFFFF&sideLabels=FFFFFF&dates=8B949E" alt="Thembelihle's GitHub contribution streak"/>
 
-<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ThembelihleQueeneth&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=f4c542&text_color=FFFFFF&langs_count=6" alt="Programming languages in my repositories"/>
+<br/>
+
+**Small steps. Consistent progress. Better code.** 💜💛
 
 </div>
 
 ---
 
-## 🤝 Let's Connect!
+## 📊 My GitHub Statistics
 
-I'm always happy to connect with people who are interested in technology, software development, AI, and opportunities to learn and grow.
-
-Whether you're a recruiter, fellow developer, business owner, or someone with an interesting idea, I'd love to connect.
+Here's a snapshot of my GitHub activity and the programming languages represented in my repositories.
 
 <div align="center">
 
-[![Portfolio](https://img.shields.io/badge/Explore_My_Portfolio-a78bfa?style=for-the-badge&logo=vercel&logoColor=white)](https://thembelihle-dev.vercel.app/)
+<img height="180" src="https://github-readme-stats.vercel.app/api?username=ThembelihleQueeneth&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=f4c542&icon_color=a78bfa&text_color=FFFFFF&include_all_commits=true&count_private=true" alt="GitHub statistics"/>
 
-[![Email](https://img.shields.io/badge/Send_Me_An_Email-f4c542?style=for-the-badge&logo=gmail&logoColor=black)](mailto:malukathembelihle95@gmail.com)
+<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ThembelihleQueeneth&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=f4c542&text_color=FFFFFF&langs_count=6" alt="Most-used programming languages"/>
 
-[![GitHub](https://img.shields.io/badge/Follow_My_Journey-24292e?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ThembelihleQueeneth)
+</div>
 
-**Building today. Learning every day. Creating for tomorrow.** 💜💛
+### 📈 My Contribution Activity
+
+<div align="center">
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=ThembelihleQueeneth&theme=react-dark&hide_border=true&bg_color=0D1117&color=f4c542&line=a78bfa&point=FFFFFF&area=true" width="95%" alt="GitHub contribution graph"/>
+
+</div>
+
+---
+
+## 🎯 What's Next?
+
+I'm continuing to develop my skills and work towards opportunities where I can build useful software and AI-powered products.
+
+My goals include:
+
+- 🚀 Build and publish more practical projects.
+- 🤖 Develop my AI application and agent-building skills.
+- ☁️ Strengthen my cloud computing knowledge.
+- 📚 Continue learning and earning relevant certifications.
+- 💼 Join a team building useful technology.
+- 🌍 Contribute to projects that make a difference.
+
+---
+
+## 🤝 Let's Connect!
+
+I'm happy to connect with recruiters, developers, business owners, and anyone interested in technology and innovation.
+
+Whether you have an opportunity, a project idea, or simply want to connect, feel free to reach out.
+
+<div align="center">
+
+[![Portfolio](https://img.shields.io/badge/🌐_Visit_My_Portfolio-a78bfa?style=for-the-badge&logo=vercel&logoColor=white)](https://thembelihle-dev.vercel.app/)
+
+[![Email](https://img.shields.io/badge/✉️_Send_Me_An_Email-f4c542?style=for-the-badge&logo=gmail&logoColor=black)](mailto:malukathembelihle95@gmail.com)
+
+[![GitHub](https://img.shields.io/badge/💻_Explore_My_Projects-24292e?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ThembelihleQueeneth?tab=repositories)
+
+<br/>
+
+### *Building today. Learning every day. Creating for tomorrow.* 💜💛
+
+![Footer](https://capsule-render.vercel.app/api?type=waving&color=0:a78bfa,50:f4c542,100:ff6b6b&height=120&section=footer)
 
 </div>
